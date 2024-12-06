@@ -1,0 +1,11 @@
+<li class="nav-item @yield('dashboard_li') " style="border-radius: 1px;box-shadow: 3px 2px 4px 0 rgba(0, 0, 0, 0.2);">
+            <a class="nav-link 
+  {{ Request::is('profile/show') || Route::currentRouteName() === 'profile.create' || Route::currentRouteName() === 'profile.edit' ? 'active2' : '' }}" 
+  href="{{ url('profile/show') }}">
+  
+
+            <i class="fa fa-user menu-icon"></i>
+            <span class="menu-title">Employees</span>
+
+            </a>
+        </li>
